@@ -23,6 +23,8 @@
     font-size: 30px;
     color: #e3e1eb;
     padding: 0 3px 0 3px;
+    display: flex;
+    justify-content: end;
 }
 
 .card.square-card:hover {
@@ -30,6 +32,9 @@
     color: #fff !important;
 }
 
+.card-text-1 {
+    font-size: 12px;
+}
 .card.square-card:hover .square-card-title,
 .card.square-card:hover .square-card-content,
 .card.square-card:hover .square-card-header,
