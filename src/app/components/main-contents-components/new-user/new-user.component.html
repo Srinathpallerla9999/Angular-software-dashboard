@@ -4,7 +4,7 @@
         <div class="card-body">
             <span *ngFor="let user of userDetails.userData.new_users" class="user-item">
                 <div class="user-profile">
-                    <div class="rounded-circle overflow-hidden pt-1">
+                    <div class="rounded-circle profile-image">
                         <img src="assets/images/user_profile.svg" alt="Icon">
                         <span class="status-dot"
                             [ngClass]="{'active-dot': user.isActive, 'inactive-dot': !user.isActive}"></span>
