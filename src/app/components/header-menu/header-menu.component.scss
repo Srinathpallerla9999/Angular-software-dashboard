@@ -1,0 +1,26 @@
+.transparent-input {
+    background-color: #00000000 !important;
+    border: none !important;
+    width: 60%;
+}
+
+.header-menu {
+    background-color: #fff !important;
+}
+
+.transparent-dropdown {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.flex-search {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.flex-navbar {
+    display: flex;
+    justify-content: flex-end;
+}

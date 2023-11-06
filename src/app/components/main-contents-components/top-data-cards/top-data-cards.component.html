@@ -1,0 +1,18 @@
+<div class="container-1">
+    <div class="cards">
+        <ng-container *ngFor="let user of userDetails.userData.top_cards">
+            <div class="card square-card">
+                <div class="row">
+                    <div class="col-8">
+                        <h1 class="card-title square-card-title">{{user.value}}%</h1>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end square-card-content">
+                        <i class="fa fa-pie-chart align-self-end" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h6 class="card-subtitle mb-2 text-muted square-card-header">{{user.header}}</h6>
+                <p class="card-text">{{user.sub_header}}</p>
+            </div>
+        </ng-container>
+    </div>
+</div>

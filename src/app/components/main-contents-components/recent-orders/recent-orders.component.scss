@@ -1,0 +1,75 @@
+* {
+    background-color: #fff !important;
+}
+
+.main-header {
+    text-align: left !important;
+    margin-left: 10px;
+}
+
+.main-content {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.table th {
+    text-align: center;
+}
+
+
+.table-data {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+.table-container {
+    height: 500px;
+    overflow-y: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    text-align: center;
+}
+
+thead tr th {
+    color: #9c9fa6;
+}
+
+tbody tr td {
+    color: #acacac;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.button-like {
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.button-like.status-pending {
+    background-color: #7683a3 !important;
+}
+
+.button-like.status-paid {
+    background-color: #28a745 !important;
+}
+
+.button-like.status-failed {
+    background-color: #dc3545 !important;
+}

@@ -1,0 +1,56 @@
+
+*{
+    background-color: #f4f7fc !important;
+    padding: 0;
+}
+.main-content {
+    margin-top: 56px;
+    padding: 20px;
+}
+
+.recent-new-user-cards {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr) repeat(4, 1fr);
+    grid-gap: 1px;
+    justify-content: space-around;
+  }
+  
+  .recent-order {
+    grid-column: span 8;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .new-user {
+    grid-column: span 4;
+    padding: 10px;
+    text-align: center;
+  }
+.charts-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) repeat(4, 1fr) repeat(2, 1fr);
+    grid-gap: 0px;
+}
+
+
+.container-2 {
+    padding-left: 70px !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .big-column {
+    flex: 2;
+    background-color: lightblue;
+    padding: 10px;
+  }
+
+  .small-column {
+    flex: 1;
+    background-color: lightgreen;
+    padding: 10px;
+  }
+
+.container-1 {
+    padding-left: 64px;
+}

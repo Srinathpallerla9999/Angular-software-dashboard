@@ -1,0 +1,31 @@
+<div class="new-user-content">
+    <h6 class="title">New User Registrations</h6>
+    <div class="card new-user-menu">
+        <div class="card-body">
+            <span *ngFor="let user of userDetails.userData.new_users" class="user-item">
+                <div class="user-profile">
+                    <div class="rounded-circle overflow-hidden pt-1">
+                        <img src="assets/images/user_profile.svg" alt="Icon">
+                        <span class="status-dot"
+                            [ngClass]="{'active-dot': user.isActive, 'inactive-dot': !user.isActive}"></span>
+                    </div>
+                </div>
+                <div class="user-details">
+                    <span class="user-name">{{user.name}}</span>
+                    <p class="user-country">{{user.country}}</p>
+                </div>
+                <div class="user-progress">
+                    <div class="progress progress-1">
+                        <div class="progress-bar" role="progressbar" [style.width.%]="user.progress"
+                            [attr.aria-valuenow]="user.progress" aria-valuemin="0" aria-valuemax="100"
+                            [ngClass]="getProgressColor(user.progress)"></div>
+                        {{user.progress}}%
+                    </div>
+                </div>
+                <div class="user-action">
+                    <button class="btn btn-secondary new-user-btn">More</button>
+                </div>
+            </span>
+        </div>
+    </div>
+</div>

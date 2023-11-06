@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <div class="input-group flex-search">
+      <img src="assets/images/search.svg" alt="search">
+      <input type="text" class="form-control transparent-input" placeholder="Search">
+    </div>
+    <ul class="navbar-nav ml-auto flex-navbar">
+      <li class="nav-item">
+        <select class="form-select transparent-dropdown" [(ngModel)]="selectedLanguage">
+          <ng-container *ngFor="let language of languages">
+            <option [value]="language">{{language}}</option>
+          </ng-container>
+        </select>
+      </li>
+      <li class="nav-item ml-2">
+        <a href="#" class="nav-link">
+          <img src="assets/images/messages.svg" alt="message">
+        </a>
+      </li>
+      <li class="nav-item ml-2">
+        <a href="#" class="nav-link">
+          <img src="assets/images/notifications.svg" alt="notification">
+        </a>
+      </li>
+      <li class="nav-item ml-2">
+        <div class="d-flex align-items-center">
+          <div class="rounded-circle overflow-hidden pt-1">
+            <img src="assets/images/profile_picture.svg" alt="Profile">
+          </div>
+        </div>
+      </li>
+      <li class="nav-item ml-2">
+        <select class="form-select transparent-dropdown">
+          <option selected>{{userName}}</option>
+          <ng-container *ngFor="let details of userDetails">
+            <option class="transparent-dropdown" [value]="details">{{details}}</option>
+          </ng-container>
+        </select>
+      </li>
+    </ul>
+  </div>
+</nav>

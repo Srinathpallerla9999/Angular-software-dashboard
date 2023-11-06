@@ -1,0 +1,39 @@
+<div class="main-content">
+    <h3 class="main-header">Recent Order</h3>
+    <div class="table-data">
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Products</th>
+                        <th scope="col">Delivery Date</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Tracking No#</th>
+                        <th scope="col">Shipping</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let order of userDetails.userData.recent_orders; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{order.name}}</td>
+                        <td>{{order.product}}</td>
+                        <td>{{order.delivery_date | date : 'dd MMM, yyyy'}}</td>
+                        <td>
+                            <div [ngClass]="{
+                                    'status-pending': order.status === 'Pending',
+                                    'status-paid': order.status === 'Paid',
+                                    'status-failed': order.status === 'Failed'}" class="center-text button-like">
+                                {{order.status}}
+                            </div>
+                        </td>
+                        <td>{{order.tracking_no}}</td>
+                        <td>{{order.shipping}}</td>
+                        <td>X</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

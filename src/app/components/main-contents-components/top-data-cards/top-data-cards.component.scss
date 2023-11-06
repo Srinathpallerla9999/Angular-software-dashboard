@@ -1,0 +1,39 @@
+.cards {
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.container-1 {
+    padding-left: 64px;
+}
+
+.card.square-card {
+    padding: 10px 20px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.square-card-title {
+    color: #506de2;
+}
+
+.square-card-content {
+    font-size: 30px;
+    color: #e3e1eb;
+    padding: 0 3px 0 3px;
+}
+
+.card.square-card:hover {
+    background-color: #506de2;
+    color: #fff !important;
+}
+
+.card.square-card:hover .square-card-title,
+.card.square-card:hover .square-card-content,
+.card.square-card:hover .square-card-header,
+.card.square-card:hover .card-text {
+    cursor: pointer;
+    color: #fff !important;
+}
